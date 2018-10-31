@@ -1,0 +1,10 @@
+<h1>Add a lovely restaurant</h1>
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name%>
+  <%= f.input :category %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.button :submit %>
+<% end %>
+
+<%= link_to "Cancel", restaurants_path%>
